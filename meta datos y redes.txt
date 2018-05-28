@@ -1,0 +1,29 @@
+<!-- COMMON TAGS -->
+<meta charset="utf-8">
+<title>TÍTULO DEL ARTÍCULO</title>
+<!-- Search Engine -->
+<meta name="description" content="DESCRIPCIÓN DEL ARTÍCULO, MÁXIMO 155 CARACTERES">
+<meta name="image" content="LINK A LA IMAGEN DEL ARTÍCULO, DEBE TENER UN TAMAÑO DE 705 PÍXELES POR 368 PÍXELES">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="TÍTULO DEL ARTÍCULO">
+<meta itemprop="description" content="DESCRIPCIÓN DEL ARTÍCULO, MÁXIMO 155 CARACTERES">
+<meta itemprop="image" content="LINK A LA IMAGEN DEL ARTÍCULO">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TÍTULO DEL ARTÍCULO">
+<meta name="twitter:description" content="DESCRIPCIÓN DEL ARTÍCULO, MÁXIMO 155 CARACTERES">
+<meta name="twitter:site" content="@USUARIO DE TWITTER">
+<meta name="twitter:creator" content="@USUARIO DE TWITTER">
+<meta name="twitter:image:src" content="LINK A LA IMAGEN DEL ARTÍCULO">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="TÍTULO DEL ARTÍCULO">
+<meta name="og:description" content="DESCRIPCIÓN DEL ARTÍCULO, MÁXIMO 155 CARACTERES">
+<meta name="og:image" content="LINK A LA IMAGEN DEL ARTÍCULO">
+<meta name="og:url" content="LINK AL ARTÍCULO">
+<meta name="og:site_name" content="TÍTULO DEL ARTÍCULO">
+<meta name="og:locale" content="en_US">
+<meta name="og:type" content="article">
+<!-- Open Graph - Article -->
+<meta name="article:section" content="Social Media">
+<meta name="article:author" content="NOMBRE DE LA EMPRESA">
+<meta name="article:tag" content="Social Media">

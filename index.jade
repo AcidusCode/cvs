@@ -1,0 +1,243 @@
+doctype html
+html(lang="es")
+
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta( http-equiv="X-UA-Compatible", content="ie=edge")
+
+		meta(name="description" content="Curriculum vitae version web! elaborada en html y css.")
+		meta(name="image", content="https://aciduscode.github.io/cvs/img/cover.png")
+
+		meta(itemprop="name", content="Acidus Stain")
+		meta(itemprop="description", content="Curriculum vitae version web! elaborada en html y css.")
+		meta(itemprop="image", content="https://aciduscode.github.io/cvs/img/cover.png")
+
+		meta(property="og:title", content="Acidus Stain")
+		meta(property="og:description", content="Curriculum vitae version web! elaborada en html y css.")
+		meta(property="og:url", content="http://aciduscode.github.io/cv")
+		meta(property="og:image", content="https://aciduscode.github.io/cvs/img/cover.png")
+		meta(name="og:site_name" content="Curriculum Vitae")
+		meta(name="og:locale" content="es_CO")
+		meta(name="og:type" content="article")
+
+
+		meta(name="twitter:card", content="Curriculum Vitae")
+		meta(name="twitter:title", content="Acidus Stain")
+		meta(name="twitter:description", content="Curriculum vitae version web! elaborada en html y css.")
+		meta(name="twitter:site", content="@Ultrapsychedelic")
+		meta(name="twitter:creator", content="@Ultrapsychedelic")
+		meta(name="twitter:image:src", content="https://aciduscode.github.io/cvs/img/cover.png")
+
+		title CV
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/animate.css")
+		link(rel="stylesheet", href="css/styles.css")
+
+	body
+		.flex.flex--responsive
+			aside
+				article.article.aside--title
+					section.banner.flex.flex--center.flex--column
+						h1.title--base.title--big Acidus <span class="bold">Stain</span>
+						h2.title--base.title--mid--special.uppercase BE A LEGEND
+
+				ul
+					img.user--photo#user__photo(src="img/photo.jpg", alt="Perfil")
+
+				ul.block--80.block--center.aside__list
+					li.flex
+						h3.title.uppercase Personal
+					li.flex
+						<span>Name</span> Acidus Stain
+					li.flex
+						<span>Birthday</span> 31ts October 1995
+					li.flex
+						<span>Relationship</span> Single
+					li.flex
+						<span>Languages</span> Spanish
+
+				ul.block--80.block.block--center.aside__list
+					li.flex
+						h3.title.uppercase Contact
+					li.flex
+						<span>Mobile</span> +3(256) 456-7890
+					li.flex
+						<span>Home</span> +3(256) 567-8901
+					li.flex
+						<span>Email</span> aciduscode@outlook.com
+					li.flex
+						<span>Skype</span> Vladirnh
+
+				ul.block--80.block--center.aside__list
+					li
+						h3.title.uppercase References
+					li Available upon request
+
+				ul.block--80.block--center.aside__list
+					li
+						h3.title.uppercase Links
+					li.flex.flex--vertical--center
+						img.icon--list(src="img/github-icon.svg")
+						a(href="#")
+							<span>www.github.com</span>/AcidusCode
+					li.flex.flex--vertical--center
+						img.icon--list(src="img/dribble-icon.svg")
+						a(href="#")
+							<span>www.dribble.com</span>/Username
+					li.flex.flex--vertical--center
+						img.icon--list(src="img/facebook-icon.svg")
+						a(href="#")
+							<span>www.facebook.com</span>/Ultrapsychedelic
+					li.flex.flex--vertical--center
+						img.icon--list(src="img/linkedin-icon.svg")
+						a(href="#")
+							<span>www.linkedin.com</span>/Username
+					li.flex.flex--vertical--center
+						img.icon--list(src="img/twitter-icon.svg")
+						a(href="#")
+							<span>www.twitter.com</span>/AcidusCode
+
+			main
+				article.article.main--title#article__main__title
+					section.banner.flex.flex--center.flex--column
+						h1.title--base.title--big
+							span.main--title--one#main__title__one Acidus 
+							span.bold.main--title--two#main__title__two Stain
+						h2.title--base.title--mid--special.uppercase.main--title--legend#main__title__legend be a legend
+
+				div
+					article.article#article__profile
+						h3.title.uppercase.article__title Profile
+						
+						p.paragraph.article__paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						
+						section.flex.flex--galery
+							svg.img__svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink" x="0px", y="0px", viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;", xml:space="preserve")
+								circle.circle--bg(cx="150", cy="150", r="100")
+								circle.circle--color#circle__one(cx="150", cy="150", r="100")
+								text(x="105" y="160" font-size="30px") Design
+							
+							svg.img__svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink" x="0px", y="0px", viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;", xml:space="preserve")
+								circle.circle--bg(cx="150", cy="150", r="100")
+								circle.circle--color#circle__two(cx="150", cy="150", r="100")
+								text(x="90" y="160" font-size="30px") Concepts
+
+							svg.img__svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink" x="0px", y="0px", viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;", xml:space="preserve")
+								circle.circle--bg(cx="150", cy="150", r="100")
+								circle.circle--color#circle__three(cx="150", cy="150", r="100")
+								text(x="92" y="160" font-size="30px") Direction
+
+							svg.img__svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink" x="0px", y="0px", viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;", xml:space="preserve")
+								circle.circle--bg(cx="150", cy="150", r="100")
+								circle.circle--color#circle__four(cx="150", cy="150", r="100")
+								text(x="112" y="160" font-size="30px") Team
+
+							svg.img__svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink" x="0px", y="0px", viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;", xml:space="preserve")
+								circle.circle--bg(cx="150", cy="150", r="100")
+								circle.circle--color#circle__five(cx="150", cy="150", r="100")
+								text(x="60" y="160" font-size="30px") Management
+
+					article.article#article__work
+						h3.title.uppercase.article__title Work
+						ul
+							li.flex
+								span.tag#tag__one 2014
+								.timeline.uppercase.tag--cont#tag__cont__one
+									h4 Design director
+									p.paragraph Big design company, New York, ny, Usa
+							li.flex
+								span.tag#tag__two 2012
+								.timeline.uppercase.tag--cont#tag__cont__two
+									h4 Senior Designer
+									p.paragraph Design company, Brooklyn, ny, Usa
+							li.flex
+								span.tag#tag__three 2008
+								.timeline.uppercase.tag--cont#tag__cont__three
+									h4 Design
+									p.paragraph Brand new, Paris, France
+
+					article.article.article--section--timeline#article__education
+						h3.title.uppercase.article__title Education
+						ul
+							li.flex
+								span.tag#tag__four 2003
+								.timeline.uppercase.tag--cont#tag__cont__four
+									h4 Ma Graphics
+									p.paragraph Royal college of art, London, UK
+							li.flex
+								span.tag#tag__five 2000
+								.timeline.uppercase.tag--cont#tag__cont__five
+									h4 Ba(hons) Graphics
+									p.paragraph Central Saint Martins, London, UK
+
+					article.article#article__software
+						h3.title.uppercase.article__title Software
+						section.flex.flex--galery.box--software
+							.svg__graph
+								h4.paragraph Adobe InDesign
+								svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewBox="0 0 300 20", style="enable-background:new 0 0 300 20;", xml:space="preserve")
+									rect.rect--bg(x="0", y="0", width="300", height="20")
+									rect.rect--color#rect__one(x="0", y="0", width="150", height="20")
+							
+							.svg__graph
+								h4.paragraph Adobe Illustrator
+								svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewBox="0 0 300 20", style="enable-background:new 0 0 300 20;", xml:space="preserve")
+									rect.rect--bg(x="0", y="0", width="300", height="20")
+									rect.rect--color#rect__two(x="0", y="0", width="197", height="20")
+
+							.svg__graph
+								h4.paragraph Adobe Photoshop
+								svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewBox="0 0 300 20", style="enable-background:new 0 0 300 20;", xml:space="preserve")
+									rect.rect--bg(x="0", y="0", width="300", height="20")
+									rect.rect--color#rect__three(x="0", y="0", width="222", height="20")
+
+							.svg__graph
+								h4.paragraph Adobe Dreamweaver
+								svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewBox="0 0 300 20", style="enable-background:new 0 0 300 20;", xml:space="preserve")
+									rect.rect--bg(x="0", y="0", width="300", height="20")
+									rect.rect--color#rect__four(x="0", y="0", width="175", height="20")
+
+							.svg__graph
+								h4.paragraph Html 5
+								svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewBox="0 0 300 20", style="enable-background:new 0 0 300 20;", xml:space="preserve")
+									rect.rect--bg(x="0", y="0", width="300", height="20")
+									rect.rect--color#rect__five(x="0", y="0", width="50", height="20")
+
+							.svg__graph
+								h4.paragraph Css 3
+								svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewBox="0 0 300 20", style="enable-background:new 0 0 300 20;", xml:space="preserve")
+									rect.rect--bg(x="0", y="0", width="300", height="20")
+									rect.rect--color#rect__six(x="0", y="0", width="250", height="20")
+
+					article.article#article__hobbies
+						h3.title.uppercase.article__title Hobbies
+						section.flex.flex--galery
+							.flex.flex--center.flex--column.hobbies--item
+								img.icon--item(src="img/mountain-icon.svg")
+								h4.paragraph Outdoors
+							.flex.flex--center.flex--column.hobbies--item
+								img.icon--item(src="img/football-icon.svg")
+								h4.paragraph Football
+							.flex.flex--center.flex--column.hobbies--item
+								img.icon--item(src="img/basketball-icon.svg")
+								h4.paragraph Basketball
+							.flex.flex--center.flex--column.hobbies--item
+								img.icon--item(src="img/laptop-icon.svg")
+								h4.paragraph Writting
+							.flex.flex--center.flex--column.hobbies--item
+								img.icon--item(src="img/movie-icon.svg")
+								h4.paragraph Movies
+							.flex.flex--center.flex--column.hobbies--item
+								img.icon--item(src="img/games-icon.svg")
+								h4.paragraph Games
+
+		footer
+			p
+				<span>Vladimir Crrep</span> Apartament 4, North 110h-5 Brooklyn, NY 11249
+				<span>Phone</span> +3(598) 758-4869
+				<span>Email</span> vladiscreep@icloud.com
+
+		script(type="text/javascript", src="js/jquery-3.2.1.min.js")
+		script(type="text/javascript", src="js/velocity.js")
+		script(type="text/javascript", src="js/velocity-ui-pack.js")

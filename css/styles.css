@@ -1,0 +1,411 @@
+/* ==========================================
+Acidus Stain
+Copyright 2018 WDD
+wirtten for - AcidusCode.github.io/cv
+===========================================*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+/* ==========================================
+Colors
+===========================================*/
+:root {
+  --main-main-bg-color: #191919;
+  --main-main-text-color: #969696;
+  --dark-low-accent-color: #505050;
+  --dark-soft-accent-color: #323232;
+  --dark-accent-color: #0a0a0a;
+  --light-mid-accent-color: #b4b4b4;
+}
+/* ==========================================
+General styles
+===========================================*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Helvetica;
+  font-family: Roboto;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h4 {
+  font-weight: 500;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* ==========================================
+Aside styles
+===========================================*/
+aside {
+  min-height: 100vh;
+  background: var(--aside-main-bg-color);
+  min-width: 35rem;
+}
+.user--photo {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border: 0.5rem solid var(--main-main-bg-color);
+  border-radius: 50%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.aside--title {
+  display: none;
+}
+/* ==========================================
+Main styles
+===========================================*/
+main {
+  background: var(--main-main-bg-color);
+  color: var(--main-main-text-color);
+}
+.banner {
+  min-height: 15rem;
+}
+/* ==========================================
+Svg Graph
+===========================================*/
+.svg__graph {
+  width: 48%;
+  margin-bottom: 1rem;
+}
+.svg__graph svg {
+  width: 100%;
+}
+.box--software {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* ==========================================
+Footer styles
+===========================================*/
+footer {
+  padding: 3rem;
+  color: var(--main-main-text-color);
+  text-align: center;
+  font-size: 1.2rem;
+  background: var(--dark-accent-color);
+}
+footer span {
+  font-weight: bold;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+}
+/* ==========================================
+Svg styles
+===========================================*/
+.img__svg {
+  width: 20%;
+}
+circle {
+  fill: none;
+  stroke-width: 20;
+  stroke-dashoffset: 658;
+}
+.circle--bg {
+  stroke: var(--dark-soft-accent-color);
+}
+/* Antes rgb(180,180,180) */
+.circle--color {
+  stroke: var(--light-mid-accent-color);
+  stroke-dasharray: 658;
+}
+#circle__one {
+  stroke-dashoffset: 524;
+}
+#circle__two {
+  stroke-dashoffset: 224;
+}
+#circle__three {
+  stroke-dashoffset: 124;
+}
+#circle__four {
+  stroke-dashoffset: 424;
+}
+#circle__five {
+  stroke-dashoffset: 54;
+}
+/* Antes rgb(180,180,180) */
+text {
+  fill: var(--light-mid-accent-color);
+  letter-spacing: 0.1rem;
+}
+.rect--bg {
+  fill: var(--dark-soft-accent-color);
+}
+/* Antes rgb(180,180,180) */
+.rect--color {
+  fill: var(--light-mid-accent-color);
+}
+.hobbies--item {
+  width: 16.66%;
+}
+/* ==========================================
+Box Model
+===========================================*/
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex--center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.flex--vertical--center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flex--galery {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: wrap;
+  flex-direction: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.flex--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.block--80 {
+  width: 80%;
+}
+.block--center {
+  margin: 0 auto;
+}
+.article {
+  width: 90%;
+  margin: 0 auto 5.5rem;
+}
+.article__title {
+  margin-bottom: 1.5rem;
+  border-bottom: 0.1rem solid var(--dark-low-accent-color);
+}
+.article__paragraph {
+  padding-top: 1rem;
+}
+/* ==========================================
+Text Styles
+===========================================*/
+.bold {
+  font-weight: bold;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.paragraph {
+  text-align: justify;
+  font-size: 1.4rem;
+}
+.title {
+  line-height: 3rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+}
+.title--base {
+  margin: 0.5rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+.title--big {
+  font-size: 3.5rem;
+  font-weight: 200;
+  color: var(--main-main-text-color);
+}
+.title--mid--special {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 0.1rem solid #fff;
+}
+.icon--font__big {
+  font-size: 7rem;
+}
+.main--title--one {
+  margin-right: 1rem;
+}
+.main--title--one,
+.main--title--two,
+.main--title--legend {
+  display: inline-block;
+}
+/* ==========================================
+Tag Styles
+===========================================*/
+.tag {
+  position: relative;
+  height: 2.6rem;
+  display: inline-block;
+  margin-right: 3rem;
+  padding: 0 1.5rem 0 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: #050505;
+  background: var(--light-mid-accent-color);
+}
+.tag::after {
+  content: '';
+  position: absolute;
+  right: -1.3rem;
+  top: 0;
+  background: transparent;
+  border-bottom: 1.3rem solid transparent;
+  border-left: 1.3rem solid var(--light-mid-accent-color);
+  border-top: 1.3rem solid transparent;
+}
+/* ==========================================
+Timeline Styles
+===========================================*/
+.timeline {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  margin-left: 2rem;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  background: #b4b4b4;
+  height: 0.8rem;
+  width: 0.8rem;
+  top: 1rem;
+  left: -1.5rem;
+  border-radius: 50%;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  background: #323232;
+  height: 100%;
+  width: 0.4rem;
+  top: 1rem;
+  left: -1.3rem;
+}
+.timeline h4 {
+  color: #c8c8c8;
+  font-size: 1.5rem;
+}
+.timeline p {
+  margin-bottom: 1.8rem;
+}
+/* ==========================================
+Aside List Styles
+===========================================*/
+.icon--list {
+  height: 3rem;
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+.icon--item {
+  height: 8rem;
+  margin: 1rem 0;
+}
+.aside__list {
+  padding: 0;
+  margin: 3rem auto 3.5rem;
+  color: var(--dark-accent-color);
+}
+.aside__list li {
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  border-bottom: 0.1rem solid var(--light-mid-accent-color);
+}
+.aside__list li span {
+  min-width: 10rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.aside__list li i {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+.aside__list li a {
+  font-size: 1.2rem;
+  color: var(--dark-accent-color);
+  text-decoration: none;
+}
+.aside__list li a span {
+  font-size: 1.3rem;
+  text-transform: none;
+}
+/* ==========================================
+Media Queris
+===========================================*/
+@media only screen and (max-width: 768px) {
+  .flex--responsive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  main {
+    padding-top: 2rem;
+  }
+  .main--title {
+    display: none;
+  }
+  .aside--title {
+    display: block;
+    margin-bottom: 0;
+  }
+  .aside--title h1 {
+    color: var(--dark-accent-color);
+  }
+  .aside--title h2 {
+    color: var(--dark-soft-accent-color);
+    border-bottom: 0.1rem solid var(--dark-soft-accent-color);
+  }
+  aside ul {
+    margin: 0 auto;
+  }
+  .user--photo {
+    width: 40%;
+    margin: 0 auto 3rem;
+  }
+  .img__svg {
+    width: 33%;
+  }
+  .svg__graph {
+    width: 100%;
+  }
+  .hobbies--item {
+    width: 20%;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .user--photo {
+    width: 55%;
+  }
+  .img__svg {
+    width: 50%;
+  }
+  .hobbies--item {
+    width: 33.33%;
+  }
+}
