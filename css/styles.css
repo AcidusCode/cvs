@@ -8,12 +8,12 @@ wirtten for - AcidusCode.github.io/cv
 Colors
 ===========================================*/
 :root {
-  --main-main-bg-color: #191919;
-  --main-main-text-color: #969696;
-  --dark-low-accent-color: #505050;
-  --dark-soft-accent-color: #323232;
-  --dark-accent-color: #0a0a0a;
-  --light-mid-accent-color: #b4b4b4;
+  --dark-color: #191919;
+  --dark-color-alt: #0a0a0a;
+  --text-color: #969696;
+  --first-color: #b4b4b4;
+  --first-color-alt: #323232;
+  --border-color: #505050;
 }
 /* ==========================================
 General styles
@@ -59,7 +59,7 @@ aside {
   display: block;
   margin: 0 auto;
   width: 50%;
-  border: 0.5rem solid var(--main-main-bg-color);
+  border: 0.5rem solid var(--dark-color-alt);
   border-radius: 50%;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -71,8 +71,8 @@ aside {
 Main styles
 ===========================================*/
 main {
-  background: var(--main-main-bg-color);
-  color: var(--main-main-text-color);
+  background: var(--dark-color);
+  color: var(--text-color);
 }
 .banner {
   min-height: 15rem;
@@ -97,10 +97,10 @@ Footer styles
 ===========================================*/
 footer {
   padding: 3rem;
-  color: var(--main-main-text-color);
+  color: var(--text-color);
   text-align: center;
   font-size: 1.2rem;
-  background: var(--dark-accent-color);
+  background: var(--dark-color-alt);
 }
 footer span {
   font-weight: bold;
@@ -119,11 +119,11 @@ circle {
   stroke-dashoffset: 658;
 }
 .circle--bg {
-  stroke: var(--dark-soft-accent-color);
+  stroke: var(--first-color-alt);
 }
 /* Antes rgb(180,180,180) */
 .circle--color {
-  stroke: var(--light-mid-accent-color);
+  stroke: var(--first-color);
   stroke-dasharray: 658;
 }
 #circle__one {
@@ -143,15 +143,15 @@ circle {
 }
 /* Antes rgb(180,180,180) */
 text {
-  fill: var(--light-mid-accent-color);
+  fill: var(--first-color);
   letter-spacing: 0.1rem;
 }
 .rect--bg {
-  fill: var(--dark-soft-accent-color);
+  fill: var(--first-color-alt);
 }
 /* Antes rgb(180,180,180) */
 .rect--color {
-  fill: var(--light-mid-accent-color);
+  fill: var(--first-color);
 }
 .hobbies--item {
   width: 16.66%;
@@ -203,7 +203,7 @@ Box Model
 }
 .article__title {
   margin-bottom: 1.5rem;
-  border-bottom: 0.1rem solid var(--dark-low-accent-color);
+  border-bottom: 0.1rem solid var(--border-color);
 }
 .article__paragraph {
   padding-top: 1rem;
@@ -234,7 +234,7 @@ Text Styles
 .title--big {
   font-size: 3.5rem;
   font-weight: 200;
-  color: var(--main-main-text-color);
+  color: var(--text-color);
 }
 .title--mid--special {
   padding-bottom: 1rem;
@@ -265,7 +265,7 @@ Tag Styles
   font-weight: bold;
   line-height: 2.6rem;
   color: #050505;
-  background: var(--light-mid-accent-color);
+  background: var(--first-color);
 }
 .tag::after {
   content: '';
@@ -274,7 +274,7 @@ Tag Styles
   top: 0;
   background: transparent;
   border-bottom: 1.3rem solid transparent;
-  border-left: 1.3rem solid var(--light-mid-accent-color);
+  border-left: 1.3rem solid var(--first-color);
   border-top: 1.3rem solid transparent;
 }
 /* ==========================================
@@ -286,23 +286,23 @@ Timeline Styles
   padding-left: 1.5rem;
   margin-left: 2rem;
 }
-.timeline::after {
-  content: '';
+.timeline--point{
+  fill: var(--first-color);
   position: absolute;
-  background: #b4b4b4;
-  height: 0.8rem;
-  width: 0.8rem;
+  height: .8rem;
+  width: .8rem;
   top: 1rem;
   left: -1.5rem;
-  border-radius: 50%;
 }
-.timeline::before {
-  content: '';
+.timeline--point circle{
+  fill: var(--first-color);
+}
+.timeline--line{
   position: absolute;
-  background: #323232;
+  width: .4rem;
   height: 100%;
-  width: 0.4rem;
   top: 1rem;
+  background: var(--first-color-alt);
   left: -1.3rem;
 }
 .timeline h4 {
@@ -326,12 +326,12 @@ Aside List Styles
 .aside__list {
   padding: 0;
   margin: 3rem auto 3.5rem;
-  color: var(--dark-accent-color);
+  color: var(--dark-color-alt);
 }
 .aside__list li {
   line-height: 2.5rem;
   font-size: 1.2rem;
-  border-bottom: 0.1rem solid var(--light-mid-accent-color);
+  border-bottom: 0.1rem solid var(--first-color);
 }
 .aside__list li span {
   min-width: 10rem;
@@ -346,12 +346,19 @@ Aside List Styles
 }
 .aside__list li a {
   font-size: 1.2rem;
-  color: var(--dark-accent-color);
+  color: var(--dark-color-alt);
   text-decoration: none;
 }
 .aside__list li a span {
   font-size: 1.3rem;
   text-transform: none;
+}
+/* ==========================================
+Animation styles
+===========================================*/
+.delay--1000 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 /* ==========================================
 Media Queris
@@ -374,11 +381,11 @@ Media Queris
     margin-bottom: 0;
   }
   .aside--title h1 {
-    color: var(--dark-accent-color);
+    color: var(--dark-color-alt);
   }
   .aside--title h2 {
-    color: var(--dark-soft-accent-color);
-    border-bottom: 0.1rem solid var(--dark-soft-accent-color);
+    color: var(--first-color-alt);
+    border-bottom: 0.1rem solid var(--first-color-alt);
   }
   aside ul {
     margin: 0 auto;
